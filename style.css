@@ -1,0 +1,62 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-color: white;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/06/20/36/school-2596090_1280.png");
+}
+header {
+    background-color: #C5CADF ;
+    position: sticky;
+    top:0;
+    box-shadow: 0px 10px #6F87FD ;
+    display: flex;
+    justify-content: space-evenly;
+}
+#logo {
+    margin: 25px 50px 0px 0px;
+    transform: rotate(-40deg);
+    color: #021578;
+    font-size: 1.5rem;
+}
+#navbar {
+    width: 80%;
+}
+#navbar ul{
+    margin:10px 0 10px auto;
+    padding:5px 0px;
+    display:flex;
+    justify-content: space-evenly;
+    list-style:none;    
+}
+
+#navbar ul li a {
+    margin-left: 3px;
+    color:black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+#intro-section {
+    height: 700px;
+    font-weight: bold;
+    font-size: 30px;
+    color:black;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+
+}
+#intro-section h1 {
+    position:relative;
+    top: 250px;
+
+}
