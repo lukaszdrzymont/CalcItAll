@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 
 }
+p {
+    margin: 0px;
+    padding: 0px;
+}
 
 body {
     margin:0;
@@ -19,12 +23,16 @@ header {
     box-shadow: 0px 10px #6F87FD ;
     display: flex;
     justify-content: space-evenly;
+    z-index: 100;
 }
 #logo {
-    margin: 25px 50px 0px 0px;
+    padding:0px;
+    margin: 30px 150px 0px 0px;
     transform: rotate(-40deg);
     color: #021578;
     font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
 }
 #navbar {
     width: 80%;
@@ -59,4 +67,98 @@ header {
     position:relative;
     top: 250px;
 
+}
+#calc-units {
+    display:flex;
+    position:relative;
+}
+#calc-units > div{
+    height: 250px;
+    margin: 10px 5px 5px 5px;
+    width: 33%;
+    border: solid black;
+    background-color: #C5CADF;
+}
+#convert-units {
+    display:flex;
+    
+}
+#convert-from {
+    border-right: solid black;
+}
+#convert-units >div {
+    width: 50%;
+    padding:5px;
+       
+}
+#convert-result {
+    display:flex;
+
+}
+#convert-result > div {
+    width: 50%;
+}
+#converting ul {
+    justify-content: center;
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+
+}
+#converting ul li {
+    margin:0px;
+    padding: 0px;
+    width: 100%
+}
+.buttonix {
+    margin:10px 0px 0px 0px;
+    width: 100%;
+    height: 40px;
+
+}
+.buttonix2 {
+    margin:10px 0px 0px 0px;
+    width: 100%;
+    height: 40px;
+}
+#convert-result > div  {
+    margin: 0px 5px 0px 5px;
+}
+#convert-type {
+    border-right: solid black;
+
+}
+#convert-type > *{
+    margin:5px;
+}
+#convert-final {
+    margin:0px;
+    padding:0px;
+}
+#convert-from ul {
+    justify-content: center;
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+
+}
+#convert-from ul li {
+    margin:0px;
+    padding: 0px;
+    width: 100%;
+}
+#convert-to ul {
+    justify-content: center;
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+
+}
+#convert-to ul li {
+    margin:0px;
+    padding: 0px;
+    width: 100%;
+}
+.selected {
+    background-color: greenyellow;
 }

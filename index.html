@@ -24,20 +24,29 @@
         </section>
         <section id="units-converter-section">
             <div class="main-table" id="calc-units">
-                <div id="type-convert">
+                <div id="converting">
                     <p>Choose what you want to convert</p>
                     <ul>
-                        <li><button>Length</button></li>
-                        <li><button>Weight</button></li>
-                        <li><button>Time</button></li>
-                        <li><button>Currency</button></li>
+                        <li><button type="button" class="buttonix" id="button-length">Length</button></li>
+                        <li><button type="button" class="buttonix" id="button-weight">Weight</button></li>
+                        <li><button type="button" class="buttonix" id="button-time">Time</button></li>
+                        <li><button type="button" class="buttonix" id="button-currency">Currency</button></li>
                     </ul>
                 </div>
-                <div id="unit-name-convert">
+                <div id="convert-units">
+                    <div id="convert-from">From: </div>
+                    <div id="convert-to">To:</div>
 
                 </div>
-                <div id="result-convert">
-                    <input>
+                <div id="convert-result">
+                    <div id="convert-type">
+                        <label for="unit-input">Type a number: </label>
+                        <input type="number" id="unit-input" name="unit-input">
+                        <input type="submit" id="button-convert" value="Convert">
+                    </div>
+                    <div id="convert-final">
+                        <p>Result:</p>
+                    </div>
                 </div>
             </div>
         </section>
