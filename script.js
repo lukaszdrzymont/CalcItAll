@@ -29,7 +29,7 @@ document.getElementById("button-convert").addEventListener('click', function(){
     console.log(number);
 
     let result = convertUnits(whatPickedFrom, whatPickedTo, number);
-    document.getElementById('asasa').innerHTML = result;
+    document.querySelector('.result-div').innerHTML = result;
 });
 
 function convertUnits(from, to, number) {
@@ -38,6 +38,36 @@ function convertUnits(from, to, number) {
         result = number * 0.001;
     }
     else if(from === 'button-meter' && to === 'button-mile') {
+        result = number * 0.000621371192;
+    }
+    else if(from === 'button-meter' && to === 'button-centimeter') {
+        result = number * 100;
+    }
+    else if(from === 'button-kilometer' && to === 'button-mile') {
+        result = number * 0.621371192;
+    }
+    else if(from === 'button-kilometer' && to === 'button-centimeter') {
+        result = number * 100000;
+    }
+    else if(from === 'button-kilometer' && to === 'button-meter') {
+        result = number * 1000;
+    }
+    else if(from === 'button-mile' && to === 'button-meter') {
+        result = number * 1609.344;
+    }
+    else if(from === 'button-mile' && to === 'button-kilometer') {
+        result = number * 1.609344;
+    }
+    else if(from === 'button-mile' && to === 'button-centimeter') {
+        result = number * 160934.4;
+    }
+    else if(from === 'button-centimeter' && to === 'button-meter') {
+        result = number * 0.000621371192;
+    }
+    else if(from === 'button-centimeter' && to === 'button-mile') {
+        result = number * 0.00000621371192;
+    }
+    else if(from === 'button-centimeter' && to === 'button-mile') {
         result = number * 0.000621371192;
     }
 
